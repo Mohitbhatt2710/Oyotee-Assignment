@@ -1,5 +1,4 @@
 // import { Checkbox } from "@mui/material"
-import { grey } from "@mui/material/colors"
 import React from "react"
 
 const Categories = () => {
