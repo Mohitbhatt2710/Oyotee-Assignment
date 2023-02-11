@@ -1,5 +1,6 @@
 import React from "react"
 import Categories from "./Categories"
+// import Shop from "./Shop"
 import "./Home.css"
 
 
@@ -10,7 +11,7 @@ const Home = () => {
       <section className='home'>
         <div className='container d_flex'>
           <Categories />
-         
+          {/* <Shop/> */}
         </div>
         
       </section>
