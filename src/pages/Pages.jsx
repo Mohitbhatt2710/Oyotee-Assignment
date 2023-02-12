@@ -1,6 +1,5 @@
 import React from "react"
 import Home from "../components/MainPage/Home"
-import Shop from "../components/MainPage/Shop"
 import Wrapper from "../components/wrapper/Wrapper"
 
 const Pages = ({ productItems, addToCart, CartItem, shopItems }) => {
@@ -8,7 +7,6 @@ const Pages = ({ productItems, addToCart, CartItem, shopItems }) => {
     <>
       <Home CartItem={CartItem} />
      
-      <Shop shopItems={shopItems} addToCart={addToCart} />
       <Wrapper />
     </>
   )

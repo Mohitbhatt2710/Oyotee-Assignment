@@ -1,22 +1,38 @@
 import React from "react"
 import Categories from "./Categories"
-// import Shop from "./Shop"
+import Shop from './Shop'
 import "./Home.css"
 
 
 
-const Home = () => {
+const Home = (shopItems) => {
   return (
     <>
       <section className='home'>
+      
         <div className='container d_flex'>
           <Categories />
-          {/* <Shop/> */}
+          <div  className="container d_flex" >
+           <Shop />
+           <Shop />
+           <Shop />          
+           <Shop />
+           
+           
+        
+           
+          </div>
         </div>
         
+          
+        
+      
       </section>
+
+   
     </>
   )
 }
 
 export default Home
+

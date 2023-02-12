@@ -1,30 +1,45 @@
-import React from "react"
-// import ShopCart from "./ShopCart"
-import "./style.css"
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
-const Shop = ({ addToCart, shopItems }) => {
+
+function Shop() {
   return (
+
     <>
-      <section className='shop background'>
-        <div className='container d_flex'>
-          <div className='contentWidth'>
-            <div className='heading d_flex'>
-              <div className='heading-left row  f_flex'>
-                <h2>Search Input to be added here !  </h2>
-              </div>
-              <div className='heading-right row '>
-                <span>View all</span>
-                <i className='fa-solid fa-caret-right'></i>
-              </div>
-            </div>
-            <div className='product-content  grid1'>
-              {/* <ShopCart addToCart={addToCart} shopItems={shopItems} /> */}
-            </div>
-          </div>
-        </div>
-      </section>
+   
+
+    <Card sx={{ maxWidth: 345, border:"2px solid lightgrey" , borderRadius:"4%" ,marginLeft:"20px" }}>
+      <CardMedia
+        sx={{ height: 140 }}
+        image="./images/flash/flash-7.png"
+        title="monsterra plant"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+         Monstera
+        </Typography>
+        <div className='rate'>
+                  <i className='fa fa-star '></i>
+                  <i className='fa fa-star'></i>
+                  <i className='fa fa-star'></i>
+                  <i className='fa fa-star'></i>
+                  <i className='fa fa-star'></i>
+                </div>
+        
+      </CardContent>
+      <CardActions>
+        <Button size="small">Price</Button>
+        <h2>$45</h2>
+        <Button size="small">Add to Cart</Button>
+      </CardActions>
+    </Card>
     </>
-  )
+  );
 }
 
 export default Shop
